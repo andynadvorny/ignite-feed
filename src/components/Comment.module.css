@@ -1,0 +1,84 @@
+.comment {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.commentWrapper {
+  flex: 1;
+}
+
+.commentBox {
+  background: var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.commentBox header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.author strong {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.author time {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--gray-400);
+}
+
+.commentBox header button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+}
+
+.commentBox header button:hover {
+  color: var(--red-500);
+}
+
+.commentBox p {
+  margin-top: 1rem;
+  color: var(--gray-300);
+}
+
+.commentWrapper footer {
+  margin-top: 1rem;
+}
+
+.commentWrapper footer button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 0.875rem;
+  font-weight: bold;
+
+  border-radius: 2px;
+}
+
+.commentWrapper footer button:hover {
+  color: var(--green-300);
+}
+
+.commentWrapper footer button svg {
+  margin-right: 0.5rem;
+}
+
+.commentWrapper footer button span::before {
+  padding: 0 0.25rem;
+  content: "\2022"
+}
